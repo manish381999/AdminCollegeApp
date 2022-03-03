@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Faculty.UpdateFaculty">
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/update_faculty_image"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:scaleType="centerCrop"
+      android:layout_gravity="center_horizontal"
+      android:src="@drawable/profile_image"
+      android:layout_marginTop="36dp"/>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+       >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/update_faculty_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="text"
+          android:hint="Name" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+       >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/update_faculty_email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textEmailAddress"
+          android:hint="Email" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+       >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/update_faculty_post"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="text"
+          android:hint="Post" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="horizontal"
+       android:layout_marginTop="24dp"
+       android:weightSum="2">
+
+      <com.google.android.material.button.MaterialButton
+         android:id="@+id/update_faculty_btn"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="Update"
+          android:textAllCaps="false"
+          android:layout_marginEnd="8dp"
+         android:layout_weight="1"/>
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/delete_faculty_btn"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="Delete"
+          android:textAllCaps="false"
+          android:layout_marginStart="8dp"
+          android:layout_weight="1"/>
+   </LinearLayout>
+</LinearLayout>
